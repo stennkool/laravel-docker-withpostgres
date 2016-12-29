@@ -3,7 +3,7 @@ MAINTAINER Stenn Kool <stennkool@gmail.com>
 
 # this dockerfile is a clone of eboraas/laravel with the php postgresql driver
 
-RUN apt-get update && apt-get -y install git curl php5-mcrypt php5-json php5-pgsql && apt-get -y autoremove && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get -y install git curl php5-mcrypt php5-json php5-pgsql php5-curl && apt-get -y autoremove && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN /usr/sbin/a2enmod rewrite
 
